@@ -1,26 +1,51 @@
 package by.htp.equipment;
 
 
-public class Equipment {
+public abstract class Equipment {
 	
-	private String bicycle;
-	private String rollers;
-	private String skateboard;
-	private String helmet;
-	private String kneepads;
-	private int size;
-	private int weight; 
+	private Category category;
+	private String title;
+	private double price; 
 
-	public Equipment (String bicycle, String rollers, String skateboard, String helmet, String kneepads, int size, int weight ) {
+	
+	public Equipment (Category category, String title, int weight, double price ) {
+		super();
+		this.category = category;
+		this.title = title;
+		this.price = price;
 		
-		this.bicycle = bicycle;
-		this.rollers = rollers;
-		this.skateboard = skateboard;
-		this.helmet = helmet;
-		this.kneepads = kneepads;
-		this.size = size;
-		this.weight = weight;
+	} }
+	
+	/* public getType() {
+	 
+		return type;
 	}
 	
 	
+	public void setType(String type) {
+		this.type = type;
+	}
+	
+	public getPrice() {
+		return price;
+	}
+	
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	public getWeight() {
+		return weight;
+	}
+	
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
+	public getPrice() {
+		return price;
+	}
+	
+	public void setPrice(String Colour) {
+		this.colour = colour;
+	}
 }
+*\

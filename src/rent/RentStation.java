@@ -1,20 +1,15 @@
-package by.htp.equipment;
+package rent;
 
-public class Main {
+import by.htp.equipment.*;
+public class RentStation {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
-	
 	private Equipment [] equipmentlist = new Equipment[100];
 	 int k = 0; 
-	
+	 
 	    public void addEquipment(Equipment m) {
-	
+
 	        equipmentlist[k++] = m;
-	
+
 	    }
 	
 	
@@ -27,6 +22,3 @@ public class Main {
 	     	 System.out.print("price: " + m.getPrice() + ", ");
 	     }
 	}}
-	
-
-}
